@@ -1,12 +1,12 @@
 // ==========================================================================
-// Project:   Demo - DetailView
+// Project:   SplitView - DetailView
 // Copyright: @2015 Dviance.
 // ==========================================================================
-/*globals Demo */
+/*globals SplitView */
 
 // This page describes the main user interface for your application.
-Demo.DetailView = SC.WorkspaceView.extend(
-/** @scope Demo.DetailView.prototype */ {
+SplitView.DetailView = SC.WorkspaceView.extend(
+/** @scope SplitView.DetailView.prototype */ {
 
 	title: 'Detail',
 

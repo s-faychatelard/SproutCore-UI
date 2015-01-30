@@ -1,13 +1,13 @@
 // ==========================================================================
-// Project:   Demo
+// Project:   SplitView
 // Copyright: @2015 Dviance.
 // ==========================================================================
-/*globals Demo */
+/*globals SplitView */
 
-Demo = SC.Application.create(
-/** @scope Demo.prototype */ {
+SplitView = SC.Application.create(
+/** @scope SplitView.prototype */ {
 
-	NAMESPACE: 'Demo',
+	NAMESPACE: 'SplitView',
 	VERSION: '0.1.0',
 
 	// This is your application store.  You will use this store to access all

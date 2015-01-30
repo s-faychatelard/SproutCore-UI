@@ -1,12 +1,12 @@
 // ==========================================================================
-// Project:   Demo - SplitView
+// Project:   SplitView - SplitView
 // Copyright: @2015 Dviance.
 // ==========================================================================
-/*globals Demo */
+/*globals SplitView */
 
 // This page describes the main user interface for your application.
-Demo.SplitView = SC.SplitView.extend(
-/** @scope Demo.SplitView.prototype */ {
+SplitView.SplitView = SC.SplitView.extend(
+/** @scope SplitView.SplitView.prototype */ {
 
 	childViews: ['master', 'detail'],
 	showInPopover: NO,

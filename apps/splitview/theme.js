@@ -1,8 +1,8 @@
 // ==========================================================================
-// Project:   Demo
+// Project:   SplitView
 // Copyright: @2015 Dviance.
 // ==========================================================================
-/*globals Demo */
+/*globals SplitView */
 
 // This is the theme that defines how your app renders.
 //
@@ -15,12 +15,12 @@
 //
 // NOTE: if you want to change the theme this one is based on, don't
 // forget to change the :css_theme property in your buildfile.
-Demo.Theme = SC.AceTheme.create({
+SplitView.Theme = SC.AceTheme.create({
   name: 'feed-hub'
 });
 
 // SproutCore needs to know that your app's theme exists
-SC.Theme.addTheme(Demo.Theme);
+SC.Theme.addTheme(SplitView.Theme);
 
 // Setting it as the default theme makes every pane SproutCore
 // creates default to this theme unless otherwise specified.

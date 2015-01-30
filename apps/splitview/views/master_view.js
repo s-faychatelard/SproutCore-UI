@@ -1,8 +1,8 @@
 // ==========================================================================
-// Project:   Demo - MasterView
+// Project:   SplitView - MasterView
 // Copyright: @2015 Dviance.
 // ==========================================================================
-/*globals Demo */
+/*globals SplitView */
 
 var ContentArray = SC.Object.extend(SC.Array, {
 
@@ -26,8 +26,8 @@ var ContentArray = SC.Object.extend(SC.Array, {
 });
 
 // This page describes the main user interface for your application.
-Demo.MasterView = SC.WorkspaceView.extend(
-/** @scope Demo.MasterView.prototype */ {
+SplitView.MasterView = SC.WorkspaceView.extend(
+/** @scope SplitView.MasterView.prototype */ {
 
 	title: 'Master',
 
