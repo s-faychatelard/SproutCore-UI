@@ -11,10 +11,11 @@ NavigationView.DetailView = SC.View.extend(
 	title: 'Detail',
 	childViews: ['contentView'],
 
+	backgroundColor: 'blue',
+
 	topToolbar: SC.ToolbarView.design({
 
 		childViews: ['back', 'title'],
-		containerViewBinding: SC.Binding.oneWay('.parentView.contentView'),
 
 		title: SC.LabelView.design(SC.AutoResize, {
 
@@ -26,14 +27,14 @@ NavigationView.DetailView = SC.View.extend(
 
 		back: SC.ButtonView.design(SC.AutoResize, {
 
-			layout: { width: 100, left: 20, height: 24, centerY: 0 },
+			layout: { width: 10, left: 20, height: 24, centerY: 0 },
 			title: "Retour",
 
 			action: function() {
 
 				if (navigationView = this.layoutView().get('containerView').get('navigationView')) {
 
-					navigationView.pop();
+					navigationView.pop(YES);
 				}
 			}
 		})
@@ -41,10 +42,14 @@ NavigationView.DetailView = SC.View.extend(
 
 	contentView: SC.ScrollView.design({
 
+		backgroundColor: 'transparent',
+
 		contentView: SC.View.design({
 
 			childViews: ['label'],
 
+			backgroundColor: 'transparent',
+			
 			label: SC.LabelView.design(SC.AutoResize, {
 
 				layout: { width: 180, height: 50, centerX: 0, centerY: 0 },

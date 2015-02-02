@@ -34,10 +34,11 @@ NavigationView.MasterView = SC.View.extend(
 	title: 'Master',
 	childViews: ['contentView'],
 
+	backgroundColor: 'red',
+
 	topToolbar: SC.ToolbarView.design({
 
 		childViews: ['title'],
-		containerViewBinding: SC.Binding.oneWay('.parentView.contentView'),
 
 		title: SC.LabelView.design(SC.AutoResize, {
 
@@ -50,16 +51,19 @@ NavigationView.MasterView = SC.View.extend(
 
 	contentView: SC.ScrollView.design({
 
+		backgroundColor: 'transparent',
+
 		contentView: SC.ListView.design({
 
+			backgroundColor: 'transparent',
+
 			content: ContentArray.create({ length: 100 }),
-			actOnSelect: YES,
 
 			action: function() {
 
 				if (navigationView = this.layoutView().layoutView().layoutView().get('navigationView')) {
 
-					navigationView.push(NavigationView.DetailView);
+					navigationView.push(NavigationView.DetailView, YES);
 				}
 			}
 		})
